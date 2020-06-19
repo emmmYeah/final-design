@@ -1,0 +1,84 @@
+/*主要展示内容块格式*/
+.exper{
+    width: 100%;
+    background:rgba(0,0,0,0.940);
+    padding: 2.6em 0;
+    color: #fff;
+}
+/*个人实践信息块*/
+.exper-info{
+    width: 1140px;
+    height: 489px;    
+    margin-left: auto;
+    margin-right: auto;
+}
+/*位置设为相对位置，可自动调节*/
+.exper h4{
+    font-size: 1.2em;
+    background: darkcyan;
+    display: inline-block;
+    padding: .6em 1.2em;
+    color: #fff;
+    position: relative;
+}
+
+/*表头标题居中*/
+.record-title1 , .record-title2{
+    text-align: center;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+/*使两个表格相互对齐始终处于屏幕中央*/
+.exper-record1 , .exper-record2{
+    margin-right: auto;
+    margin-left: auto;
+}
+/*给表格加外边框*/
+.group{
+    border-style: dotted;
+    border-color: #F7E612;
+}
+/*设置表格内间距和行高*/
+.group td{
+    padding: 5px 8px;
+    line-height: 15px;
+}
+.cont.exper-l1{
+    width: 50%;
+    padding: 5px 10px;
+    text-align: center;
+}
+.cont.exper-l1 h3{
+    font-size: 1em;
+    background: darkcyan;
+    display: inline-block;
+    padding: .6em 1.2em;
+    color: #fff;
+    position: relative;
+}
+/*设置用于显示修饰性的小三角的共性*/
+.exper-info  h3::before{
+    width: 0;
+    height: 0;
+    position: absolute;
+    /*无特殊字符*/
+    content: '';    
+    border-style: solid;
+    /*边框颜色除了右边均为透明*/
+}
+/*设置尖角向右的小三角*/
+.exper-record1  h3::before{
+    top: 9px;
+    right: -14px;
+    border-color: transparent transparent transparent rgb(0, 139, 139);
+    border-width: 10px 0 10px 16px;
+}
+ /*设置尖角向左的小三角*/
+.exper-record2  h3::before{
+    top: 9px;
+    left: -14px;
+    border-color: transparent rgb(0, 139, 139) transparent transparent ;
+    border-width: 10px 16px 10px 0px;
+}

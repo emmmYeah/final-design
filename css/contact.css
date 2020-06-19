@@ -1,0 +1,60 @@
+
+/*联系板块基本格式，凝胶布局*/
+.contact{
+    width: 100% ;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2.6em 0;
+    padding-bottom: 6em;
+    color: #ffffff;
+}
+.contact .container{
+    height: auto;
+}
+/*联系具体信息板块*/
+.contact-info{
+    height: 350px;
+    width: 100%;
+}
+/*联系板块图片区域的长宽设置*/
+.contact-img{
+    width: 40%;
+    float: left;
+    padding-left: 65px;   
+}
+.contact-form{    
+    width: 55%;
+    float: left;
+}
+/*表单外部格式*/
+.contact-form input{
+    margin: 5px 0;
+    width: 49%;
+    color: #fff;
+    background: none;
+    outline: none;
+    font-size: 1em;
+    padding: .8em 1em;
+    border: 1px solid #8C8C8C;
+    -webkit-appearance: none;
+    display: inline-block;
+}
+.contact-form textarea{
+    width: 80%;
+    background: none;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    padding: .8em 1em;
+    border: 1px solid #8C8C8C;
+    min-height: 10em;
+    -webkit-appearance: none;
+}
+/*input和type之间不可以有空格*/
+.contact-form input[type="submit"] {
+    background-color: darkcyan;    
+    border: 2px solid darkcyan;
+    color: #fff;
+    font-size: 1.2em;
+    margin: 1em 0 0 0;
+    width: 85%;
+}

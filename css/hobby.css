@@ -1,0 +1,143 @@
+
+body{
+    width: 100%;;
+}
+/*设置整个页面的基调*/
+.hobby{
+    width: 100% ;
+    background-color: #ffffff;
+    padding: 2.6em 0;
+    color: #ffffff;
+}
+/*下边框线隔开展示内容*/
+.hobby-main{
+    padding-bottom: 50px;
+    border-bottom: 4px double rgba(247, 197, 106, 0.35);
+}
+.hobby .container{
+    height:auto;
+}
+.self-img{
+    float: left;
+}
+.self-img img{
+    width: 235px;
+    height: 395px;
+}
+.hobby-wrapper{
+    margin-left: 240px;
+    height: 400px;
+    width: 700px;
+}
+/*设置文本带边框,保持上下边距*/
+.hobby-wrapper1 .hobby-wrapper2{
+    width: 420px;
+    margin:10px auto ;
+    border-style: dotted;
+}
+/*爱好块的边框颜色设为#F7E612*/
+.hobby-wrapper1{        
+    height: 140px;
+    display: block;
+    margin: 30px 0;
+    margin-left: 50px;
+    padding: 15px;
+}
+/*特长块的边框颜色设为rgb(0, 139, 139)*/
+.hobby-wrapper2{       
+    height: 120px;
+    display: block;    
+    margin: 30px 0 5px 50px;
+    padding: 10px;
+}
+.hobby-wrapper .text{
+    font-size: 18px;
+    color: #999;
+    width: 70%;
+}
+.hobby-wrapper1 .text{    
+    margin-left: 92px; 
+    line-height: 28px;
+    border-color: #F7E612;    
+    border-style: double;
+}
+.hobby-wrapper2 .text{
+    margin-left: 112px; 
+    float: left;
+    line-height: 28px;
+    width: 420px;
+    border-color: darkcyan;
+    border-style: double;
+}
+.hobby-wrapper h3{
+    font-size: 1em;
+    display: inline-block;
+    padding: .6em 1.2em;
+    position: relative;
+}
+
+.hobby-wrapper1 h3{
+    color: #000;
+    background: #F7E612;
+}
+
+.hobby-wrapper2 h3{
+    color: #fff;
+    background-color: darkcyan;
+}
+/*设置爱好的小三角*/
+.hobby-wrapper1  h3::before{
+    width: 0;
+    height: 0;
+    position: absolute;
+    /*无特殊字符*/
+    content: '';    
+    border-style: solid;
+    /*边框颜色除了右边均为透明*/
+    top: 9px;
+    right: -14px;
+    border-color: transparent transparent transparent  #F7E612;
+    border-width: 10px 0 10px 16px;
+}
+/*设置特长的小三角*/
+.hobby-wrapper2  h3::after{
+    width: 0;
+    height: 0;
+    position: absolute;
+    /*无特殊字符*/
+    content: '';    
+    border-style: solid;
+    /*边框颜色除了右边均为透明*/
+    top: 9px;
+    left: -14px;
+    border-color: transparent darkcyan  transparent transparent ;
+    border-width: 10px 16px 10px 0px;
+}
+
+.hobby-wrapper3{
+    margin-top: 20px;
+    color: #999;
+    font-size: 36px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+/*照片模块*/
+.photo-container{
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative; 
+    height: 1231.16px;
+}
+/*设置照片的宽度大小*/
+.photo{
+    width: 33.333%;
+    padding: 0 7.5px 0px;
+    margin-top: 15px;
+}
+.photo-item{
+    height: auto;
+}
+
+footer .hobby .container{
+    margin: 0;
+}

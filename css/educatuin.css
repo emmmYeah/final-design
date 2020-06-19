@@ -1,0 +1,119 @@
+p{    
+    color: rgb(0,0,0,0.55) ;
+}
+/*主要展示内容块格式*/
+.edu{
+    background-color: #ffffff;
+    width: 100%;
+   padding: 2.6em 0;
+    color: #000;
+
+}
+/*学历详情信息块*/
+.edu-info{
+    width: 1140px;
+    height: auto;    
+    margin-left: auto;
+    margin-right: auto;
+}
+.edu.container{
+    height: auto;
+}
+/*把与父元素间距稍微调小，更加美观*/
+.edu .title{
+    margin-top: 0.7em;
+}
+.edu-wapper{
+    height: 50px;
+}
+/*字体居中，宽度固定，边框设为淡黄色，设为内联块元素*/
+.edu-tit{
+    width: 70px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #000000;
+    /*保持垂直居中*/
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 2px solid #F7E612;
+    padding: 0 1.2em;
+    /*浮动元素，左对齐*/
+    float: left; 
+    /*配合before伪类*/   
+    position: relative;
+}
+/*设置向右的小三角*/
+.edu-tit::before{
+    width: 0;
+    height: 0;
+    position: absolute;
+    /*无特殊字符*/
+    content: '';    
+    border-style: solid;
+    /*边框颜色除了右边均为透明*/
+    top: 10px;
+    right: -18px;
+    border-color: transparent transparent transparent #F7E612;
+    border-width: 10px 0 10px 16px;
+}
+.edu-cont{
+    margin-left: 150px;
+    /*保持垂直居中*/
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/*照片块*/
+.sch-img{
+    float: left;
+}
+/*固定照片大小*/
+.sch-img img{
+    width: 180px;
+    height: 105px;
+}
+/*学校简介块*/
+.sch-info{
+    /*与照片块保持一定距离比较美观*/
+    margin-left: 190px;
+}
+/*设置“简介格式*/
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color:  rgb(0, 139, 139);
+}
+/*将两个部分在视觉上较明显地隔开*/
+.courses{
+    margin-top: 20px;
+    padding-top: 50px;
+    height: auto;
+    border-top: 4px double rgba(247, 197, 106, 0.35);
+}
+.major{
+    float: left;
+    width: 50%;
+}
+.major-name{
+    height: auto;
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(0, 139, 139);
+    margin-bottom: 20px;
+}
+.major-info{
+    width: 517px;
+    height: auto;
+}
+.major-info p{    
+    color: rgb(0,0,0,0.65) !important;
+    font-weight: 800;
+    font-size: 19px;
+}
+.major-img img{
+    width: 45%;
+    height:286px;
+}
+footer p{
+    color: #999;
+}

@@ -1,0 +1,224 @@
+/*元素普通格式定义*/
+body{
+	margin:0;
+	font-family: 'Roboto Condensed', sans-serif;
+    background: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+p{
+    font-size: 1.2em;
+    color: #999;
+    line-height: 1.8em;
+    margin: 0;
+}
+/*加粗*/
+b{
+    font-weight: bold;
+}
+div{
+    display: block;
+}
+/*设置无列表格式*/
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*个人介绍首页header格式*/
+#header_index{
+    background: url(../images/head背景.jpg) no-repeat center 0px;
+    width: 100%;
+    height: 433px;
+}
+.box{
+    width: 100%;
+}
+/**/
+#header_index .box{
+    padding: 4em 0;
+    height: 352px;
+}
+/*使用凝胶布局，使得左右间距根据网页大小自动调整*/
+.container{
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /*布局关键，使得左右间距根据网页大小自动调整*/
+    margin-right: auto;
+    margin-left: auto;
+}
+/*header背景加一层半透明黑色*/
+#header_index .container{
+    height: 352px;    
+    background-color: rgba(0, 0, 0, 0.512);
+}
+/*设置header中的图片块格式*/
+.head_img{
+    padding: 0;
+    /*浮动元素，左对齐*/
+    float: left;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/*设置header中的图片格式*/
+.head_img img{
+    width: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.68);
+}
+/*设置header中的文字格式*/
+.head_info{
+    padding-left: 3em;
+    width: 60%;
+    position: relative;
+    /*浮动元素，右对齐*/
+    float: right;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-right: 0;
+}
+/*一级标题*/
+.head_info h1{
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0.5em 0 0;
+}
+/*六级标题*/
+.head_info h6{
+    font-size: 1em;
+    color: #C7C7C7;
+    margin-top: 0.8em;
+    /*设置字母之间的间距*/
+    letter-spacing: 6px;
+}
+/*个人信息列表格式*/
+.record{
+    margin-top: 1em;
+    border-top: 1px solid #AFAFAF;
+    padding-top: 0.5em;
+}
+
+ul.record li {
+    display: block;
+}
+ul.record li ul.record-text li {
+    display: inline-block;
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 1em;
+    font-weight: 100;
+}
+ul.record li ul.record-text li:nth-child(1){
+    width: 20%;
+}
+
+/*单独设置导航背景颜色*/
+.nav{
+    background-color: #008B8B;
+    width: auto;
+    text-align: center;
+}
+/*使导航栏呈块状而非列，高度根据内容自动调节，设置溢出内容不会被修剪，会呈现在元素框之外。*/
+.inner{
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/*设置无序列表格式*/
+ul.manu{
+    margin: 0;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid transparent;
+}
+/*li项目在同一行内横向排列，设置字间距为3px*/
+ul.manu li{
+    display: inline-block;
+    position: relative;
+    letter-spacing: 3px;
+}
+/*导航栏各项链接设为白色*/
+ul.manu li a{
+    display: block;
+    color: #fff;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+/*光标指向链接时，背景色和字体颜色互换，字体加粗，起到提示效果*/
+ul.manu li a:hover{
+    text-decoration: none;
+    background-color: #eee;
+    color: #008B8B;
+    font-weight: bold;
+}
+#index-main.container{
+    height: 570px;
+}
+/*设置自我介绍内边距及宽度*/
+.about{
+    margin: 0;
+    padding: 0 15px;
+    width: 760px;
+    height: 380px;
+    float: left;
+}
+/*个人简介具体格式*/
+h3.title{
+    font-size: 4em;
+    text-align: center;
+    color: #008B8B;
+    /*设置双下划线*/
+    border-bottom: 4px double rgba(247, 197, 106, 0.35);
+    padding-bottom: 0.2em;
+    /*与父元素有一定距离*/
+    margin-bottom: 1em;
+}
+/*所获奖项的块格式*/
+.awards{
+    padding-left: 5em;
+    padding-right: 15px;
+    float: right;
+}
+.awards h5 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    color: #008B8B;
+}
+/*奖项放在列表中呈现*/
+.awards ul{
+    border: 3px double #008B8B;
+    padding: 1em 2em;
+}
+.awards li{
+    display: block;
+    color: #999;
+    margin: 1em 0;
+    font-size: 1em;
+}
+/*在页脚前加一块纯色板，使得页面前后呼应*/
+.side.container{
+    width: 100%;
+    height: 27px;
+    background-color: #008B8B;
+    text-align: center;
+    padding: 0;
+}
+/*footer格式*/
+footer{
+    height: 50px;
+    padding: 2em 0;
+    text-align: center;
+    background: #1F1F1F;
+}
